@@ -1,0 +1,124 @@
+<div class="main-content global-wrapper-height">
+          <div class="main-content-wrapper">
+            <div class="left-content">
+              <div class="form-wrap">
+                <form action="" class="mainForm">
+                  <div class="field-container">
+                    <div class="input-controller">
+                      <label for="">Id</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">Position</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">Organisation</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">submission Email</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">submission Link</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">Job Location</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller span-row">
+                      <label for="">opening date</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">closing date</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller span-row">
+                      <label for="">applied date</label>
+                      <input type="text" class="input" />
+                    </div>
+                    <div class="input-controller">
+                      <label for="">interview status</label>
+                      <input type="text" class="input" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="buttons-wrap">
+                <button class="btn"></button><button class="btn"></button>
+                <button class="btn"></button><button class="btn"></button>
+              </div>
+            </div>
+            <div class="right-content"></div>
+          </div>
+        </div>
+
+
+        /* .dashboard-container{
+    overflow: hidden;
+} */
+
+.main-content-wrapper{
+    width: 97%;
+    margin: 0 auto;
+    height: 76vh;
+    gap: 0.85rem;
+    display: grid;
+    padding: 0.8rem;
+    grid-template-columns: 1fr 0.5fr;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.left-content{
+    height: inherit;
+}
+.left-content{
+    overflow-y: hidden;
+}
+.main-content{
+    overflow-y: hidden;
+}
+
+.form-wrap{
+    overflow: hidden;
+}
+.form-wrap form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.input{
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #88888844;
+}
+
+.field-container{
+    width: 100%;
+    height: inherit;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+input:focus{
+    outline: none;
+    border-bottom: 3px solid rgb(9, 88, 0);
+}
+
+
+.active-page{
+    background-color: rgba(0, 0, 255, 0.104);
+    border-right: 2px solid blue;
+    color:#fff;
+}
+
+.dropdown-menu .active-page a{
+    color: blue;
+}
+ .span-row{
+    grid-row: span 2;
+}
