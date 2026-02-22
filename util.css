@@ -288,11 +288,14 @@ li a{
     background-color: #ffffff;
     border: 1px solid #88888844;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1.2rem;
     font-size: 0.85rem;
 }
-
+.card-body{
+    text-align: right;
+}
 .statistics{
     font-size: 2rem;
 }
@@ -557,37 +560,6 @@ li a{
 .icon-btn.delete:hover {
     background: #fee2e2;
 }
-
-
-
-
-/* table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead {
-    background: #f9fafb;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    font-size: 13px;
-    color: #555;
-    text-transform: uppercase;
-}
-
-tbody tr {
-    border-bottom: 1px solid #eee;
-}
-
-tbody tr:hover {
-    background: #f9fafb;
-} */
 
 
 /* Status badges */
