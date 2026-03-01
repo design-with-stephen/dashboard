@@ -1,0 +1,173 @@
+/* ================================================= */
+/*  RESET & GLOBAL */
+/* ================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFDFD;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: #4b4b4b;
+}
+
+.msg_alert{
+    width: 98%;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    background-color: #c7ffc7;
+    color: #000000;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+
+
+h2 {
+    color: #00bf00;
+    font-size: 1.2rem;
+}
+
+hr {
+    border-color: #0c0c0c26;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #00bf00;
+}
+
+strong {
+    color: #005800;
+    font-weight: 400;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 0.85rem;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(9, 88, 0);
+}
+
+.form-header,
+.table-header,
+.title-wrap {
+    padding: 0.65rem 0;
+}
+
+.logo {
+    color: #00bf00;
+}
+
+footer {
+    padding: 1.2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #76767628;
+    background: hsla(0, 0%, 86%, 0.136);
+    color: #6969699a;
+    margin-top: 1.2rem;
+}
+
+
+
+/* ============================= */
+/* TABS */
+/* ============================= */
+
+.tabs {
+    padding: 0.65rem 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: #fff;
+    margin-top: 1.2rem;
+}
+
+.tab-btn {
+    padding: 0.65rem 1.2rem;
+    border-radius: 5px;
+    border: 1px solid rgba(139, 139, 139, 0.081);
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tab-btn a{
+
+    text-decoration: none;
+    color: #4b4b4b9f;
+}
+
+.main-content-wrapper {
+    padding: 1.2rem;
+}
+
+.tab-btn:hover {
+    border-right: 4px solid #00bf00;
+    color: #00bf00;
+}
+
+.tab-btn.active{
+    /* background-color: #00bf00; */
+    border-bottom: 2px solid rgb(0, 223, 0);
+}
+
+
+.profile-wrap p{
+    color:  #00bf00;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .profile-wrap p{
+    color:  #00bf00;
+    font-size: 0.85rem;
+}
+    .buttons-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .tab-btn {
+        color: rgba(0, 0, 0, 0.637);
+        font-size: 0.75rem;
+        padding: 0.65rem 0.4rem;
+        background-color: #ffffff;
+    }
+}

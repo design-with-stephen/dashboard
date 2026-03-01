@@ -1,0 +1,197 @@
+/* ================================================= */
+/* MAIN CONTAINER */
+/* ================================================= */
+
+.main_container {
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.main-content {
+    height: fit-content;
+
+}
+
+.main-container {
+    /* overflow-y: scroll; */
+    scrollbar-width: thin;
+    height: fit-content;
+}
+
+/* ================================================= */
+/* TOPBAR */
+/* ================================================= */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.85rem 3rem;
+    background-color: #fff;
+    border-bottom: 1px solid #88888844;
+}
+
+.profile-wrap {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.hamburger img {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+}
+
+.icons {
+    width: 35px;
+    height: 35px;
+}
+
+.searchBar-wrap {
+    width: 30vw;
+    height: 40px;
+}
+
+.searchBar-wrap input {
+    background-color: transparent;
+    border: 1px solid #76767628;
+    border-radius: 5px;
+    height: 100%;
+    width: 75%;
+    padding: 0 0.6rem;
+    color: #4b4b4b;
+}
+
+.searchBar-wrap input:focus {
+    border: none;
+    border-radius: 5px;
+}
+
+.searchBar-wrap button {
+    background-color: transparent;
+    border: 2px solid #00bf00;
+    color: #3a3a3a;
+    cursor: pointer;
+    height: inherit;
+    width: 24%;
+    border-radius: 5px;
+    transition: 0.5s ease all;
+
+    &:hover {
+        background-color: #00bf00;
+        color: white;
+    }
+}
+
+
+
+/* ================================================= */
+/* RESPONSIVE DESIGN */
+/* ================================================= */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1200px) {
+
+
+
+    .main_container {
+        left: 260px;
+        width: calc(100% - 260px);
+    }
+
+    .sidebar {
+        width: 260px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .main_container {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .profile-wrap {
+        gap: 0.65rem;
+    }
+
+    .main-content {
+        padding: 1.2rem;
+    }
+
+    .topbar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 1.2rem;
+    }
+
+    .profile {
+        order: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0rem;
+    }
+
+    .searchBar-wrap {
+        width: 100%;
+        order: 2;
+        display: none;
+    }
+
+    .main-content {
+        padding: 1.2rem;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+
+    .topbar {
+        justify-content: space-between;
+    }
+
+    .profile img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .searchBar-wrap input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 386px) {
+
+
+
+    .main-content {
+        padding: 0.2rem;
+    }
+
+    .topbar {
+        justify-content: space-between;
+    }
+
+    .profile img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .searchBar-wrap input {
+        width: 70%;
+    }
+}

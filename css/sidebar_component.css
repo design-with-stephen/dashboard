@@ -1,0 +1,196 @@
+
+/* ================================================= */
+/* SIDEBAR */
+/* ================================================= */
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #88888844;
+    position: absolute;
+    transition: 0.5s ease all;
+    left: 0;
+    overflow: hidden;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 1.2rem;
+    border-bottom: 1px solid #3a3a3a1c;
+    margin-bottom: 3rem;
+}
+
+.sidebar-header .close-sidebar{
+    display: none;
+}
+
+.sidabar-content-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.sidabar-content-wrap nav ul{
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: column;
+}
+
+.upgradeBadge{
+    width: 80%;
+    height: 30vh;
+    background-color: #00bf00;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Sidebar Links */
+
+.side-bar-link{
+    color: #4b4b4b;
+    padding: 0 30px;
+    transition: 0.5s ease all;
+    cursor: pointer;
+
+    &:hover{
+        border-right:2px solid #00bf00;
+    }
+}
+
+li a{
+    color: #4b4b4b;
+    text-decoration: none;
+    transition: 0.5s ease all;
+
+    &:hover{
+        color:#00bf00;
+    }
+}
+
+.active-page{
+    background-color: #00ff0016;
+    padding: 0.85rem 2rem;
+    border-right: 4px solid#00bf00;
+}
+.active-dropdown{
+    border-right: 4px solid#00bf00;
+    color: #00bf00;
+}
+.dropdown-menu .active-page a{
+    color: #00bf00;
+}
+
+/* ================================================= */
+/* 4 DROPDOWN */
+/* ================================================= */
+
+.dropdown{
+    padding: 0 0 0 30px;
+    cursor: pointer;
+}
+
+.dropdown > .dropdown-toggle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+.dropdown:hover{
+        color: #00bf00;
+}
+
+.dropdown-menu{
+    max-height: 0;
+    overflow: hidden;
+    background: #fffef5;
+    transition: max-height 0.3s ease;
+}
+
+.dropdown-menu li{
+    padding: 10px 40px;
+    transition: 0.5s ease all;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(0, 144, 10, 0.338);
+        border-right:4px solid #00bf00;
+    }
+}
+
+.dropdown-menu li a{
+    color: rgba(32, 31, 31, 0.725);
+}
+
+.dropdown.active .dropdown-menu{
+    max-height: 200px;
+    gap: 0.4rem;
+}
+
+.arrow{
+    transition: transform 0.3s;
+}
+
+.dropdown.active .arrow{
+    transform: rotate(90deg);
+}
+
+/* ================================================= */
+/* RESPONSIVE DESIGN */
+/* ================================================= */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1200px){
+
+    .sidebar{
+        width: 260px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px){
+
+    .sidebar{
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+    }
+
+    .sidebar.active{
+        transform: translateX(0);
+    }
+    .sidebar.hidden{
+    transform: translateX(-100%);
+}
+
+    .hamburger img{
+        display: block;
+        cursor: pointer;
+    }
+
+    .sidebar-header .close-sidebar{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Small Tablets & Large Phones */
+/* @media (max-width: 768px){
+
+    
+} */
+
+/* Mobile Phones */
+/* @media (max-width: 576px){
+
+    
+} */
+/* @media (max-width: 386px){
+
+    
+} */

@@ -1,0 +1,80 @@
+/* search css */
+.search-input-controller {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.searchbar-header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.search-description {
+    color: #62626291;
+}
+
+.search-wrap {
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+.searchBtn {
+    padding: 0.85rem 2rem;
+    background-color: rgb(0, 190, 3);
+    color: white;
+}
+
+.search-input-controller input:focus {
+    outline: none;
+    border: 3px solid rgba(22, 216, 0, 0.404);
+}
+
+/* ================================================= */
+/* RESPONSIVE DESIGN */
+/* ================================================= */
+
+/* Large Tablets & Small Laptops */
+/* @media (max-width: 1200px) {
+
+} */
+
+/* Tablets */
+/* @media (max-width: 992px) {
+
+    
+} */
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .search-wrap {
+
+        width: 100%;
+    }
+
+    .topbar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .searchBtn {
+        padding: 0.85rem 1.2rem;
+    }
+    .profile {
+        justify-content: end;
+    }
+
+
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+
+    .topbar {
+        justify-content: space-between;
+    }
+}
+
+/* @media (max-width: 386px) {
+
+
+} */

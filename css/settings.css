@@ -1,0 +1,12 @@
+.tabs-content{
+    width: 100%;
+    padding: 2rem;
+
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    height: 40vh;
+    display: block;
+}

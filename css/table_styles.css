@@ -1,0 +1,165 @@
+
+/* Table Controls */
+.table-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.table-controls input,
+.table-controls select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+
+/* Table */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+.table-container,
+.left-content {
+    border-radius: 14px;
+    /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */
+    border: none;
+}
+
+/* Scroll wrapper */
+.table-wrap {
+    overflow-y: auto;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #3a3a3a2a;
+}
+
+/* Custom Scrollbar */
+.table-wrap::-webkit-scrollbar {
+    width: 8px;
+}
+.table-wrap::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.table-wrap::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 10px;
+}
+.table-wrap::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+/* Header */
+.table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table th {
+    background: #004c00;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+/* First and last header rounded */
+.table th:first-child {
+    border-top-left-radius: 12px;
+}
+.table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* Table body */
+.table td {
+    padding: 14px 16px;
+    color: #444;
+    background: #ffffff;
+    transition: 0.2s ease;
+}
+
+/* Zebra striping */
+.table tbody tr:nth-child(even) td {
+    background: #f9fafb;
+}
+
+/* Row hover */
+.table tbody tr:hover td {
+    background: #eef2ff;
+    transform: scale(1.002);
+}
+
+/* Soft row separation */
+.table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Last row border fix */
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Subtle cell divider */
+.table td + td {
+    border-left: 1px solid #f5f5f5;
+}
+
+/* Optional: smooth appearance */
+.table tbody tr {
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+
+/* ================================================= */
+/* RESPONSIVE DESIGN */
+/* ================================================= */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1200px){
+
+    
+}
+
+/* Tablets */
+@media (max-width: 992px){
+
+    .main-content-tables{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px){
+
+
+    .table-controls{
+        flex-direction: column;
+    }
+
+    .page-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
